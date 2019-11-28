@@ -1,0 +1,23 @@
+{
+  "name": "appticketcar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "debug": "nodemon server.js",
+    "debug:log": "DEBUG=* nodemon server.js",
+    "start:local": "export NODE_ENV=local && node server.js",
+    "start:staging": "export NODE_ENV=staging && node server.js",
+    "start:window": "set NODE_ENV=local& node server.js",
+    "debug:log-win": "set DEBUG=* & nodemon server.js"
+  },
+  "author": "trieuviDev",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12",
+    "nodemon": "^2.0.1",
+    "yarn": "^1.19.2"
+  }
+}
